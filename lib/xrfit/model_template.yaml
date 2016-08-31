@@ -1,0 +1,60 @@
+background:
+    func: linear
+    parameters:
+        param1:
+            name:
+            value: 
+            vary:
+            min:
+            max:
+            expr:
+        param2:
+            name:
+            value: 
+            vary:
+            min:
+            max:
+            expr:
+peaks:
+    peak01:
+        func: gauss
+        parameters:
+            param1:
+                value:
+                vary:
+                min:
+                max:
+                expr:
+            param2:
+                value:
+                vary:
+                min:
+                max:
+                expr:
+            param3:
+                value:
+                vary:
+                min:
+                max:
+                expr:
+    peak02:
+        func: gauss
+        parameters:
+            param1:
+                value:
+                vary:
+                min:
+                max:
+                expr:
+            param2:
+                value:
+                vary:
+                min:
+                max:
+                expr:
+            param3:
+                value:
+                vary:
+                min:
+                max:
+                expr:

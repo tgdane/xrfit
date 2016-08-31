@@ -1,0 +1,109 @@
+process = 
+
+data
+    infiles
+        dname   = None
+        fname   = None
+        numbers = None
+    backfiles
+        dname   = None
+        fname   = None
+        numbers = None
+    darkfiles
+        dname   = None
+        fname   = None
+        numbers = None
+    outfiles
+        dname   = None
+        fname   = None
+        numbers = None
+    flatfile = None
+    maskfile = None
+    ponifile = None
+
+    calibration
+        gi_geometry = None
+        alpha_i     = None
+        mislaign    = None
+
+ 
+
+reduction_params
+    generic
+        correctSolidAngle    = True 
+        error_model          = None
+        dummy                = None
+        delta_dummy          = None
+        polarization_factor  = None
+        method               = 'lut' 
+        unit                 = 'q_nm^-1' 
+        normalization_factor = None
+    
+    transform_image
+        rebin                = None
+        inPl_range           = None 
+        outPl_range          = None
+    
+    integrate_2d
+        nbPt_rad             = None
+        nbPt_azim            = None
+        radial_range         = None
+        azimuth_range        = None
+
+    profile_sector
+        nbPt                 = None
+        chi_pos              = None
+        chi_width            = None
+        radial_range         = None
+        
+    profile_chi
+        nbPt                 = None
+        radial_pos           = None
+        radial_width         = None
+        azimuth_range        = None
+    
+    profile_op_box
+        nbPt                 = None
+        ip_pos               = None
+        ip_width             = None
+        op_range             = None
+    
+    profile_ip_box
+        nbPt                 = None
+        op_pos               = None
+        op_width             = None
+        ip_range             = None
+        
+fitting_params
+    integration_process = 'profile_sector'
+    save_reduced        = False
+    
+    filter
+        sigma1        = 100.0
+        sigma2        = 5.0
+        offset        = 0.05
+    
+    fitting
+        bkg_func       = 'linear'
+        bkg_prefix     = 'bkg'
+        peak_func      = 'pvoigt'
+        peak_prefix    = 'peak'
+        manual_peaks   = None
+        
+    error_checking
+        require_errors = True
+        error_thresh   = 5.0
+        
+        
+        
+        
+                
+        
+        
+        
+        
+
+
+
+
+
